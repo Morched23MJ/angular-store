@@ -1,0 +1,35 @@
+@import 'color-palette'
+@import 'fonts'
+
+html
+    font-family: Roboto
+    color: #111
+    //width: 425px
+    //height: 489px
+
+body
+    margin: 0
+    padding: 0
+    //width: 425px
+    //height: 489px
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    transition: .2s ease-in-out all
+
+::-webkit-scrollbar
+    width: 5px
+::-webkit-scrollbar-track
+    background: #111
+::-webkit-scrollbar-thumb
+    background: rgba($accent-color, .25)
+::-webkit-scrollbar-thumb:hover
+    background: darken($accent-color, 5%)
+
+input, textarea, select
+
+input:focus
+    border-color: darkorange !important
+    box-shadow: 0 0 0 0.2rem rgba(darkorange, .25) !important

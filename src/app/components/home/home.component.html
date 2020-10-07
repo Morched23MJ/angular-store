@@ -1,0 +1,40 @@
+<div class="home">
+  <div style="background-color:ghostwhite" class="wrapper px-5 py-5">
+    <h1 class="fw-bold fs-48 mb-5">Stats</h1>
+    <div class="row">
+      <div class="col-12 col-md-6 latest p-3">
+        <div style="background-color:azure;" class="rounded p-3 bsb-15">
+
+          <h3 class="uppercase fs-16 fw-bold">Latest product</h3>
+          <div *ngIf="latest else empty">
+            <div class="id p-3">
+              <h3 class="uppercase fs-14 fw-bold">Reference</h3>
+              <h3>{{latest['reference']}}</h3>
+            </div>
+            <div class="price p-3">
+              <h3 class="uppercase fs-14 fw-bold">Price</h3>
+              <h3>${{latest['price']}}</h3>
+            </div>
+          </div>
+          <ng-template #empty class="p-3">
+            Stock is empty!
+          </ng-template>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 stock p-3">
+        <div style="background-color:azure;" class="rounded p-3 bsb-15">
+
+          <h3 class="uppercase fs-16 fw-bold">Stock</h3>
+          <div class="stock p-3">
+            <h3 class="uppercase fs-14 fw-bold">Products in Stock</h3>
+            <h3>{{total}}</h3>
+          </div>
+          <div class="value p-3">
+            <h3 class="uppercase fs-14 fw-bold">Total ($)</h3>
+            <h3>${{value}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

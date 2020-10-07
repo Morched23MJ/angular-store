@@ -1,0 +1,103 @@
+.roboto {
+  font-family: "Roboto"; }
+
+.ls-05 {
+  letter-spacing: 0.05rem; }
+
+.ls-1 {
+  letter-spacing: 0.1rem; }
+
+.fs-8 {
+  font-size: 0.5rem !important; }
+
+.fs-10 {
+  font-size: 0.6125rem !important; }
+
+.fs-11 {
+  font-size: 0.6875rem !important; }
+
+.fs-12 {
+  font-size: 0.75rem !important; }
+
+.fs-14 {
+  font-size: 0.875rem !important; }
+
+.fs-16 {
+  font-size: 1rem !important; }
+
+.fs-18 {
+  font-size: 1.125rem !important; }
+
+.fs-20 {
+  font-size: 1.25rem !important; }
+
+.fs-24 {
+  font-size: 1.5rem !important; }
+
+.fs-30 {
+  font-size: 1.875rem !important; }
+
+.fs-36 {
+  font-size: 2.25rem !important; }
+
+.fs-48 {
+  font-size: 3rem !important; }
+
+.fs-64 {
+  font-size: 4rem !important; }
+
+.fs-72 {
+  font-size: 4.5rem !important; }
+
+.fs-84 {
+  font-size: 5.25rem !important; }
+
+.fs-96 {
+  font-size: 6rem !important; }
+
+.fs-112 {
+  font-size: 7rem !important; }
+
+.fw-bold {
+  font-weight: bold; }
+
+.fw-100 {
+  font-weight: 100; }
+
+.fw-300 {
+  font-weight: 300; }
+
+.fw-400 {
+  font-weight: 400; }
+
+.fw-550 {
+  font-weight: 550; }
+
+.fw-900 {
+  font-weight: 900; }
+
+.italic {
+  font-style: italic; }
+
+.centered {
+  text-align: center; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.o-25 {
+  opacity: 0.25; }
+
+.o-50 {
+  opacity: 0.5; }
+
+.o-75 {
+  opacity: 0.75; }
+
+.o-89 {
+  opacity: 0.89; }
+
+.o-100 {
+  opacity: 1; }
+
+/*# sourceMappingURL=fonts.css.map */

@@ -1,0 +1,34 @@
+.pc-color {
+  color: #111; }
+
+.pc-background {
+  background: #111; }
+
+.sc-color {
+  color: rgba(17, 17, 17, 0.85); }
+
+.sc-background {
+  background: rgba(17, 17, 17, 0.85); }
+
+.bpc-color {
+  color: #F3F5F7; }
+
+.bpc-background {
+  background: #F3F5F7; }
+
+.bsc-color {
+  color: rgba(243, 245, 247, 0.85); }
+
+.bsc-background {
+  background: rgba(243, 245, 247, 0.85); }
+
+.ac-color {
+  color: #2AAE63; }
+
+.ac-background {
+  background: #2AAE63; }
+
+.ac-background-25 {
+  background: rgba(42, 174, 99, 0.15); }
+
+/*# sourceMappingURL=color-palette.css.map */

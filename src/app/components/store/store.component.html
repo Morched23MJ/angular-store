@@ -1,0 +1,58 @@
+<div class="home">
+  <div style="background: ghostwhite" class="wrapper px-5 py-5">
+    <h1 class="fw-bold fs-48 mb-5">Store</h1>
+    <div class="row">
+      <div class="col-12 col-md-6 add p-3">
+        <div style="background-color:azure;" class="rounded p-3 bsb-15">
+          <h3 class="uppercase fs-16 fw-bold">Add a product</h3>
+          <form id="addproduct" [formGroup]="productForm" (ngSubmit)="onSubmit()"
+            class="d-flex flex-column rounded p-5">
+            <div class="d-flex flex-column">
+              <div class="form-group">
+                <label class="fs-12" for="exampleInputEmail1">Reference</label>
+                <input type="text" class="form-control fs-14" placeholder="Enter reference"
+                  formControlName="reference" />
+                <div *ngIf="reference.invalid && (reference.dirty || reference.touched)">
+                  <span *ngIf="reference?.errors.required" class="fs-12 d-block italic">Reference is required.</span>
+                  <span *ngIf="reference?.errors.minlength" class="fs-12 d-block italic">Reference must contain at least
+                    5 characters.</span>
+                  <span *ngIf="reference?.errors.maxlength" class="fs-12 d-block italic">Reference must contain at most
+                    20 characters.</span>
+                  <span *ngIf="reference?.errors.pattern" class="fs-12 d-block italic">Reference must contain a
+                    space.</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="fs-12" for="exampleInputPassword1">Price</label>
+                <input type="number" class="form-control fs-14" placeholder="Enter price" formControlName="price"
+                  required />
+                <div *ngIf="price.invalid && (price.dirty || price.touched)">
+                  <span *ngIf="price?.errors.required" class="fs-12 italic">Price is required.</span>
+                </div>
+              </div>
+            </div>
+            <span style="color: red;" class="fs-12">
+              {{ error != undefined ? error : "" }}
+            </span>
+            <button style="background: darkblue; color: white" [disabled]="!productForm.valid" type="submit"
+              class="mt-1 align-self-end btn">
+              Add
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="col-12 stock p-3">
+        <div style="background-color:azure;" class="rounded p-3 bsb-15">
+
+          <h3 class="uppercase fs-16 fw-bold">Stock</h3>
+          <ul *ngIf="products.length > 0 else empty" class="fake-list p-3">
+            <li *ngFor="let product of products" class="fs-16 fw-bold uppercase">{{product['reference']}}, ${{product['price']}}</li>
+          </ul>
+          <ng-template #empty class="p-3 bsb-15">
+            No products yet. Add one!
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
